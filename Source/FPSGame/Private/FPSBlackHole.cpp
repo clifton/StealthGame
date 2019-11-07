@@ -15,17 +15,22 @@ AFPSBlackHole::AFPSBlackHole()
 	MeshComp->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	RootComponent = MeshComp;
 
-	BlackHoleForceComp = CreateDefaultSubobject<USphereComponent>(TEXT("BlackHoleForceComp"));
-	BlackHoleForceComp->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
-	BlackHoleForceComp->SetCollisionResponseToAllChannels(ECR_Ignore);
-	BlackHoleForceComp->SetCollisionResponseToChannel(ECC_PhysicsBody, ECR_Overlap);
-	BlackHoleForceComp->SetupAttachment(MeshComp);
-
 	BlackHoleCollisionComp = CreateDefaultSubobject<USphereComponent>(TEXT("BlackHoleCollisionComp"));
-	BlackHoleCollisionComp->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
-	BlackHoleCollisionComp->SetCollisionResponseToAllChannels(ECR_Ignore);
-	BlackHoleCollisionComp->SetCollisionResponseToChannel(ECC_PhysicsBody, ECR_Overlap);
 	BlackHoleCollisionComp->SetupAttachment(MeshComp);
+
+	BlackHoleCollisionComp->OnComponentBeginOverlap.AddDynamic(this, &AFPSBlackHole::OverlapBlackHoleCollision);
+
+	BlackHoleForceComp = CreateDefaultSubobject<USphereComponent>(TEXT("BlackHoleForceComp"));
+	BlackHoleForceComp->SetupAttachment(MeshComp);
+}
+
+void AFPSBlackHole::OverlapBlackHoleCollision(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp,
+	int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	if (OtherActor)
+	{
+		OtherActor->Destroy();
+	}
 }
 
 // Called when the game starts or when spawned
@@ -44,24 +49,15 @@ void AFPSBlackHole::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	TArray<AActor*> CollectedActors;
-	BlackHoleForceComp->GetOverlappingActors(CollectedActors);
-	for (auto It = CollectedActors.CreateIterator(); It; It++)
-	{
-		UStaticMeshComponent* SM = Cast<UStaticMeshComponent>((*It)->GetRootComponent());
-		if (SM)
-		{
-			SM->AddRadialForce(GetActorLocation(), BlackHoleForceComp->GetScaledSphereRadius(), BlackHoleForce, ERadialImpulseFalloff::RIF_Constant, true);
-		}
-	}
+	TArray<UPrimitiveComponent*> OverlappingComps;
+	BlackHoleForceComp->GetOverlappingComponents(OverlappingComps);
 
-	BlackHoleCollisionComp->GetOverlappingActors(CollectedActors);
-	for (auto It = CollectedActors.CreateIterator(); It; It++)
+	for (auto It = OverlappingComps.CreateIterator(); It; It++)
 	{
-		UStaticMeshComponent* SM = Cast<UStaticMeshComponent>((*It)->GetRootComponent());
-		if (SM)
+		UPrimitiveComponent* Comp = *It;
+		if (Comp && Comp->IsSimulatingPhysics())
 		{
-			SM->DestroyComponent();
+			Comp->AddRadialForce(GetActorLocation(), BlackHoleForceComp->GetScaledSphereRadius(), BlackHoleForce, ERadialImpulseFalloff::RIF_Constant, true);
 		}
 	}
 }
