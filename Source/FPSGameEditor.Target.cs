@@ -9,5 +9,5 @@ public class FPSGameEditorTarget : TargetRules
 	{
 		Type = TargetType.Editor;
 		ExtraModuleNames.Add("FPSGame");
-	}
+    }
 }
