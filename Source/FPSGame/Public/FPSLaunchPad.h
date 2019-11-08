@@ -28,10 +28,10 @@ protected:
 	UPROPERTY(VisibleAnywhere, Category = "Components")
 	UBoxComponent* CollisionComp;
 
-	UPROPERTY(EditAnywhere, Category = "Components")
+	UPROPERTY(EditInstanceOnly, Category = "Components")
 	float LaunchForce;
 
-	UPROPERTY(EditAnywhere, Category = "Components")
+	UPROPERTY(EditInstanceOnly, Category = "Components")
 	float LaunchZBoost;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Effects")
