@@ -8,9 +8,10 @@
 			"Name": "FPSGame",
 			"Type": "Runtime",
 			"LoadingPhase": "Default",
-      "AdditionalDependencies": [
-        "Engine"
-      ]
+			"AdditionalDependencies": [
+				"Engine",
+				"AIModule"
+			]
 		}
 	],
 	"Plugins": [
@@ -18,9 +19,9 @@
 			"Name": "OculusVR",
 			"Enabled": false
 		},
-    {
-      "Name": "SteamVR",
-      "Enabled": false
-    }
+		{
+			"Name": "SteamVR",
+			"Enabled": false
+		}
 	]
 }

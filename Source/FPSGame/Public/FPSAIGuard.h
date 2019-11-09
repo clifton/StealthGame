@@ -27,7 +27,7 @@ public:
 
 protected:
 
-	UPROPERTY(VisibleAnywhere, Category = "Components")
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Components")
 	UPawnSensingComponent* PawnSensingComp;
 
 	FRotator OriginalRotation;
