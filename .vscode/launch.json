@@ -1,0 +1,114 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "FPSGame (Debug)",
+			"request": "launch",
+			"preLaunchTask": "FPSGame Win64 Debug Build",
+			"program": "D:\\code\\StealthGame\\Binaries\\Win64\\FPSGame-Win64-Debug.exe",
+			"args": [
+			],
+			"cwd": "D:\\UE\\UE_4.18",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\UE\\UE_4.18\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "FPSGame (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "FPSGame Win64 DebugGame Build",
+			"program": "D:\\code\\StealthGame\\Binaries\\Win64\\FPSGame-Win64-DebugGame.exe",
+			"args": [
+			],
+			"cwd": "D:\\UE\\UE_4.18",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\UE\\UE_4.18\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "FPSGame (Development)",
+			"request": "launch",
+			"preLaunchTask": "FPSGame Win64 Development Build",
+			"program": "D:\\code\\StealthGame\\Binaries\\Win64\\FPSGame.exe",
+			"args": [
+			],
+			"cwd": "D:\\UE\\UE_4.18",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\UE\\UE_4.18\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "FPSGame (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "FPSGame Win64 Shipping Build",
+			"program": "D:\\code\\StealthGame\\Binaries\\Win64\\FPSGame-Win64-Shipping.exe",
+			"args": [
+			],
+			"cwd": "D:\\UE\\UE_4.18",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\UE\\UE_4.18\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "FPSGame (Test)",
+			"request": "launch",
+			"preLaunchTask": "FPSGame Win64 Test Build",
+			"program": "D:\\code\\StealthGame\\Binaries\\Win64\\FPSGame-Win64-Test.exe",
+			"args": [
+			],
+			"cwd": "D:\\UE\\UE_4.18",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\UE\\UE_4.18\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "FPSGameEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "FPSGameEditor Win64 Debug Build",
+			"program": "D:\\UE\\UE_4.18\\Engine\\Binaries\\Win64\\UE4Editor-Win64-Debug.exe",
+			"args": [
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-debug"
+			],
+			"cwd": "D:\\UE\\UE_4.18",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\UE\\UE_4.18\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "FPSGameEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "FPSGameEditor Win64 DebugGame Build",
+			"program": "D:\\UE\\UE_4.18\\Engine\\Binaries\\Win64\\UE4Editor.exe",
+			"args": [
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-debug"
+			],
+			"cwd": "D:\\UE\\UE_4.18",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\UE\\UE_4.18\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "FPSGameEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "FPSGameEditor Win64 Development Build",
+			"program": "D:\\UE\\UE_4.18\\Engine\\Binaries\\Win64\\UE4Editor.exe",
+			"args": [
+				"D:\\code\\StealthGame\\FPSGame.uproject"
+			],
+			"cwd": "D:\\UE\\UE_4.18",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\UE\\UE_4.18\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		}
+	]
+}

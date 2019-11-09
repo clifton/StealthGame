@@ -1,0 +1,617 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"taskName": "FPSGame Win32 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"FPSGame",
+				"Win32",
+				"Debug",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGame Win32 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"FPSGame",
+				"Win32",
+				"Debug",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGame Win32 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"FPSGame",
+				"Win32",
+				"DebugGame",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGame Win32 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"FPSGame",
+				"Win32",
+				"DebugGame",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGame Win32 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"FPSGame",
+				"Win32",
+				"Development",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGame Win32 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"FPSGame",
+				"Win32",
+				"Development",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGame Win32 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"FPSGame",
+				"Win32",
+				"Shipping",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGame Win32 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"FPSGame",
+				"Win32",
+				"Shipping",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGame Win32 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"FPSGame",
+				"Win32",
+				"Test",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGame Win32 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"FPSGame",
+				"Win32",
+				"Test",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGame Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"FPSGame",
+				"Win64",
+				"Debug",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGame Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"FPSGame",
+				"Win64",
+				"Debug",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGame Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"FPSGame",
+				"Win64",
+				"DebugGame",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGame Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"FPSGame",
+				"Win64",
+				"DebugGame",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGame Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"FPSGame",
+				"Win64",
+				"Development",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGame Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"FPSGame",
+				"Win64",
+				"Development",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGame Win64 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"FPSGame",
+				"Win64",
+				"Shipping",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGame Win64 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"FPSGame",
+				"Win64",
+				"Shipping",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGame Win64 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"FPSGame",
+				"Win64",
+				"Test",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGame Win64 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"FPSGame",
+				"Win64",
+				"Test",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGame HTML5 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"FPSGame",
+				"HTML5",
+				"Debug",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGame HTML5 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"FPSGame",
+				"HTML5",
+				"Debug",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGame HTML5 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"FPSGame",
+				"HTML5",
+				"DebugGame",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGame HTML5 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"FPSGame",
+				"HTML5",
+				"DebugGame",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGame HTML5 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"FPSGame",
+				"HTML5",
+				"Development",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGame HTML5 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"FPSGame",
+				"HTML5",
+				"Development",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGame HTML5 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"FPSGame",
+				"HTML5",
+				"Shipping",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGame HTML5 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"FPSGame",
+				"HTML5",
+				"Shipping",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGame HTML5 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"FPSGame",
+				"HTML5",
+				"Test",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGame HTML5 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"FPSGame",
+				"HTML5",
+				"Test",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGameEditor Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"FPSGameEditor",
+				"Win64",
+				"Debug",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGameEditor Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"FPSGameEditor",
+				"Win64",
+				"Debug",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGameEditor Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"FPSGameEditor",
+				"Win64",
+				"DebugGame",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGameEditor Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"FPSGameEditor",
+				"Win64",
+				"DebugGame",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGameEditor Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"FPSGameEditor",
+				"Win64",
+				"Development",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "FPSGameEditor Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"FPSGameEditor",
+				"Win64",
+				"Development",
+				"D:\\code\\StealthGame\\FPSGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE\\UE_4.18"
+			}
+		}
+	]
+}

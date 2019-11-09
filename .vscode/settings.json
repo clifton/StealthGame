@@ -1,0 +1,11 @@
+{
+	"typescript.tsc.autoDetect": "off",
+	"files.exclude": {
+		"D:/code/StealthGame/.git": true,
+		"D:/code/StealthGame/.vs": true,
+		"D:/code/StealthGame/.vscode": true,
+		"D:/code/StealthGame/Content": true,
+		"D:/code/StealthGame/Intermediate": true,
+		"D:/code/StealthGame/Saved": true
+	}
+}
