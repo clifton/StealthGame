@@ -16,7 +16,7 @@ AFPSGameMode::AFPSGameMode()
 	HUDClass = AFPSHUD::StaticClass();
 }
 
-void AFPSGameMode::CompleteMission(APawn* InstigatorPawn)
+void AFPSGameMode::CompleteMission(APawn* InstigatorPawn, bool bMissionSuccess)
 {
 	if (!InstigatorPawn) return;
 
@@ -43,5 +43,5 @@ void AFPSGameMode::CompleteMission(APawn* InstigatorPawn)
 		UE_LOG(LogTemp, Warning, TEXT("SpectatingViewpointClass is nullptr. Please update FPSGameMode with valid subclass. Cannot change view target."))
 	}
 
-	OnMissionCompleted(InstigatorPawn);
+	OnMissionCompleted(InstigatorPawn, bMissionSuccess);
 }
