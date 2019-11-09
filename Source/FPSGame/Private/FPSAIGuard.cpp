@@ -2,6 +2,7 @@
 
 #include "FPSAIGuard.h"
 #include "FPSGameMode.h"
+#include "FPSAIGuardController.h"
 #include "Perception/PawnSensingComponent.h"
 #include "DrawDebugHelpers.h"
 
@@ -27,6 +28,9 @@ void AFPSAIGuard::OnPawnSeen(APawn* SeenPawn)
 
 	SetGuardState(EAIState::Alerted);
 
+	AFPSAIGuardController* GuardController = Cast<AFPSAIGuardController>(GetController());
+	GuardController->StopMovement();
+
 	AFPSGameMode* GM = Cast<AFPSGameMode>(GetWorld()->GetAuthGameMode());
 	if (GM) {
 		GM->CompleteMission(SeenPawn, false);
@@ -48,6 +52,9 @@ void AFPSAIGuard::OnNoiseHeard(APawn* NoiseInstigator, const FVector& Location, 
 
 	SetActorRotation(NewLookAt);
 	SetGuardState(EAIState::Suspicious);
+
+	AFPSAIGuardController* GuardController = Cast<AFPSAIGuardController>(GetController());
+	GuardController->StopMovement();
 	
 	GetWorldTimerManager().ClearTimer(TimerHandle_ResetOrientation);
 	GetWorldTimerManager().SetTimer(TimerHandle_ResetOrientation, this, &AFPSAIGuard::ResetOrientation, 3.0f);
@@ -59,6 +66,9 @@ void AFPSAIGuard::ResetOrientation()
 
 	SetActorRotation(OriginalRotation);
 	SetGuardState(EAIState::Idle);
+
+	AFPSAIGuardController* GuardController = Cast<AFPSAIGuardController>(GetController());
+	GuardController->GoToNextWaypoint();
 }
 
 void AFPSAIGuard::SetGuardState(EAIState NewState)

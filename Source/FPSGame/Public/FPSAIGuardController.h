@@ -15,15 +15,25 @@ UCLASS()
 class FPSGAME_API AFPSAIGuardController : public AAIController
 {
 	GENERATED_BODY()
+
+private:
+	uint8 INextTargetPoint;
 	
+protected:
+
+	UPROPERTY()
+	TArray<AActor*> Waypoints;
+
+	UPROPERTY()
+	ATargetPoint* NextTargetPoint;
+
 public:
 
 	void BeginPlay() override;
 
-protected:
+	void OnMoveCompleted(FAIRequestID RequestID, const FPathFollowingResult& Result) override;
 
-	UPROPERTY(EditInstanceOnly, BlueprintReadWrite)
-	TArray<ATargetPoint*> Waypoints;
+	UFUNCTION()
+	void GoToNextWaypoint();
 	
-	void GoToWaypoint(ATargetPoint Waypoint);
 };
