@@ -34,7 +34,12 @@ protected:
 
 	FTimerHandle TimerHandle_ResetOrientation;
 
+	// when this changes, run the function only on clients
+	UPROPERTY(ReplicatedUsing=OnRep_GuardState)
 	EAIState GuardState;
+
+	UFUNCTION()
+	void OnRep_GuardState();
 	
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
