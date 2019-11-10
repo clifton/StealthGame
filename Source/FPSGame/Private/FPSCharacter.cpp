@@ -57,8 +57,10 @@ void AFPSCharacter::Tick(float DeltaTime)
 	if (!IsLocallyControlled())
 	{
 		FRotator NewRot = CameraComponent->RelativeRotation;
-		NewRot.Pitch = RemoteViewPitch;
+		NewRot.Pitch = RemoteViewPitch * 360.f / 255.f;
 
+		// this is an unsigned uint8 representing degrees in Pawn.cpp
+		// RemoteViewPitch = (uint8)(NewRemoteViewPitch * 255.f/360.f);
 		CameraComponent->SetRelativeRotation(NewRot);
 	}
 }
